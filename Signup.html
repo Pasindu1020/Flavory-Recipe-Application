@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="CSS/Signupstyle.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="left-side">
+            <img src="Images/logo1.JPG" alt="Logo">
+            <h2>Turn your ideas into reality.</h2>
+            <p>Start for free and get attractive offers from the community.</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-side">
+            <!-- LOGIN CARD -->
+            <div class="card login-card">
+                <h2>Login to your Account</h2>
+                <p>See what is going on with your business</p>
+                <form action="Login.php" method="post">
+
+                <label>Email</label>
+                <input type="email" placeholder="mail@abc.com" name="logemail">
+
+                <label>Password</label>
+                <input type="password" placeholder="********" name="logpw">
+
+                <br><br>
+                <button class="btn" id="loginButton">Login</button>
+            </form>
+                <br><br>
+
+                <p>
+
+                </p>
+                <p>Not Registered Yet? <a href="#" id="showSignup">Create an account</a></p>
+            </div>
+
+            <!-- SIGN-UP CARD (Initially Hidden) -->
+            <div class="card signup-card">
+                <form action="Signup.php" method="post">
+                <h2>Create an Account</h2>
+                <p>Join us today!</p>
+
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username" name="uname">
+
+                <label>Email</label>
+                <input type="email" placeholder="mail@abc.com" name="email">
+
+                <label>Password</label>
+                <input type="password" placeholder="********" name="pw">
+
+                <button class="btn" id="signupButton">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Signupscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #FFF8E1;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar img {
+    height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .signup-btn button {
+    background-color: #712f01;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px; 
+    cursor: pointer;
+  }
+  
+  .search-container {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .search-container input {
+    padding: 10px 40px 10px 20px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .search-container i {
+    position: absolute;
+    right: 21%;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row, so 2 rows for 6 cards */
+    padding: 0 70px;
+    gap: 0.5px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .recipe-card {
+    text-align: center;
+  }
+  
+  .recipe-card img {
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .recipe-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+  }
+  
+  .recipe-card p {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .recipe-card i {
+    color: #000;
+    margin-right: 5px;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .pagination span {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: #FFF8E1;
+    padding: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column {
+    min-width: 150px;
+  }
+  
+  .footer-column h4 {
+    font-weight: bold;
+    margin-top: 60px;
+ 
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #712f01; /* or the exact brown color you’re using */
+    text-decoration: none; /* removes underline */
+    font-weight: 500;
+  }
+  
+  .footer-column a:hover {
+    color: #9a3c06; /* slightly lighter/darker on hover, optional */
+  }

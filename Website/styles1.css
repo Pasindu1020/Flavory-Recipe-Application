@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: #fff2cc;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.signup-btn {
+  background-color: #5c2e00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Main Payment Section */
+.payment-container {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #f2f2f2;
+}
+
+.payment-title {
+  color: #7b2e00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.payment-methods {
+  margin: 20px 0;
+}
+
+.payment-methods label {
+  margin-right: 20px;
+}
+
+.accepted-cards {
+  margin-bottom: 20px;
+}
+
+.accepted-cards p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.accepted-cards img {
+  margin-right: 10px;
+  height: 40px;
+}
+
+/* Form Styles */
+.payment-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.exp-row {
+  display: flex;
+  gap: 10px;
+}
+
+.exp-input {
+  flex: 1;
+}
+
+.confirm-btn {
+  background-color: #5c2e00;
+  color: white;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #fff2cc;
+  padding: 40px 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.column h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.column p {
+  margin: 5px 0;
+  font-size: 14px;
+}

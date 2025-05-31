@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <img src="Logo.png" alt="Logo" class="logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Recipe</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="signup-btn">Sign up</button>
+  </header>
+
+  <main class="payment-container">
+    <h2 class="payment-title">PAYMENT</h2>
+
+    <div class="payment-methods">
+      <label><input type="radio" name="payment" /> PayPal</label>
+      <label><input type="radio" name="payment" checked /> Card</label>
+    </div>
+
+    <div class="accepted-cards">
+      <p>Accepted Cards</p>
+      <img src="card_img.png" alt="MasterCard">
+    </div>
+
+    <form class="payment-form">
+      <label>Name on the Card:</label>
+      <input type="text" required>
+
+      <label>Card Number:</label>
+      <input type="text" required>
+
+      <div class="exp-row">
+        <div class="exp-input">
+          <label>Exp Year:</label>
+          <input type="text" required>
+        </div>
+        <div class="exp-input">
+          <label>Exp Month:</label>
+          <input type="text" required>
+        </div>
+      </div>
+
+      <label>CVV:</label>
+      <input type="text" required>
+
+      <button type="submit" class="confirm-btn">Confirm Payment</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+      <div class="column">
+        <img src="logo.png" alt="logo" width="100">
+        <p>© 2025 FoodVibes, Inc.<br>All rights reserved.</p>
+      </div>
+      <div class="column">
+        <h4>Quick Links</h4>
+        <p>Home</p><p>Recipes</p><p>About</p><p>Contact</p>
+      </div>
+      <div class="column">
+        <h4>Explore</h4>
+        <p>Salads</p><p>Entrees</p><p>Desserts</p><p>Beverages</p>
+      </div>
+      <div class="column">
+        <h4>Connect</h4>
+        <p>Facebook</p><p>Instagram</p><p>Twitter</p><p>Pinterest</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

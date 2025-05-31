@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+}
+
+header {
+  background: #fff2cc;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.signup-btn {
+  background-color: #5c2e00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.membership {
+  text-align: center;
+  background-color: #e4d1c4;
+  padding: 40px 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.plan {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plan h2 {
+  font-size: 28px;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+footer {
+  background: #fff2cc;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 60px;
+}
+
+.column p, .column h4 {
+  margin: 8px 0;
+}
+
+.payment-form {
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.payment-form h2 {
+  color: #7b2e00;
+}
+
+.payment-form form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.payment-form .row {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-btn {
+  background-color: #5c2e00;
+  color: white;
+  padding: 12px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}

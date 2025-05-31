@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flavory</title>
+  <link rel="stylesheet" href="CSS/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="nav-left">
+        <img src="images/Logo.png" alt="Flavory Logo" class="logo" />
+  
+        <!-- Menu right next to logo -->
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Recipe Page.html">Recipes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- Sign Up on far right -->
+      <div class="nav-signup">
+        <a href="#" class="btn nav-btn">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="header">
+    <div class="hero-image">
+      <img src="Images/Background.png" alt="Delicious Dish">
+    </div>
+    <div class="hero-text">
+      <h1>Discover the Best Flavors</h1>
+      <p>Explore our extensive collection of delectable recipes, tailored to your dietary preferences. From classic comfort foods to innovative vegetarian dishes</p>
+      <a href="#" class="btn primary">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Master Chefs Section -->
+<section class="chefs-section" id="chefs">
+    <h2 class="section-title">Meet our Master Chefs</h2>
+    <div class="chefs-grid">
+      <div class="chef-card">
+        <img src="Images/Pramudi.png" alt="Pramudi Premarathna" class="chef-img" />
+        <p class="chef-name">Pramudi Premarathna</p>
+      </div>
+      <div class="chef-card">
+        <img src="Images/Vimesh.png" alt="Vimesh Gunasekaran" class="chef-img" />
+        <p class="chef-name">Vimesh Gunasekaran</p>
+      </div>
+      <div class="chef-card">
+        <img src="Images/Isheni.png" alt="Isheni Thamel" class="chef-img" />
+        <p class="chef-name">Isheni Thamel</p>
+      </div>
+      <div class="chef-card">
+        <img src="Images/Shenuka.png" alt="Lourdes Shenuka" class="chef-img" />
+        <p class="chef-name">Lourdes Shenuka</p>
+      </div>
+      <div class="chef-card">
+        <img src="Images/Pasindu.png" alt="Pasindu Harshamal" class="chef-img" />
+        <p class="chef-name">Pasindu Harshamal</p>
+      </div>
+    </div>
+  
+    <div class="more-btn-container">
+      <a href="#" class="more-btn">More about Us</a>
+    </div>
+  </section>
+
+
+<!-- Premium Recipes Section -->
+<section class="premium-recipes" id="recipes">
+  <h2 class="section-heading">Premium Recipes</h2>
+  <div class="recipe-grid">
+    <div class="recipe-card">
+      <img src="Images/Elevated.png" alt="Elevated" class="recipe-img" />
+      <p class="recipe-label">Elevated</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/Delectable.png" alt="Delectable" class="recipe-img" />
+      <p class="recipe-label">Delectable</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/Gourmet.png" alt="Gourmet" class="recipe-img" />
+      <p class="recipe-label">Gourmet</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/Hearty.png" alt="Hearty" class="recipe-img" />
+      <p class="recipe-label">Hearty</p>
+    </div>
+  </div>
+</section>
+
+<!-- Most Recent Recipes Section -->
+<section class="recent-recipes" id="recent">
+  <h2 class="recent-heading">Most Recent Recipes</h2>
+  <div class="recent-grid">
+    <div class="recent-card">
+      <img src="Recipe pages/lemon-mashroom-pasta.jpeg" alt="Lemon Mashroom Pasta" class="recent-img" />
+      <p class="recipe-title">Lemon Mashroom Pasta</p>
+      <p class="recipe-time">25 mins</p>
+    </div>
+    <div class="recent-card">
+      <img src="Recipe pages/teriyaki-chicken-rice.jpeg" alt="Teriyaki Chicken Rice" class="recent-img" />
+      <p class="recipe-title">Teriyaki Chicken Rice</p>
+      <p class="recipe-time">40 mins</p>
+    </div>
+    <div class="recent-card">
+      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" class="recent-img" />
+      <p class="recipe-title">Coconut Curry Chicken</p>
+      <p class="recipe-time">45 mins</p>
+    </div>
+    <div class="recent-card">
+      <img src="Recipe pages/breakfast-buns.jpg" alt="Breakfast Buns" class="recent-img" />
+      <p class="recipe-title">Breakfast Buns</p>
+      <p class="recipe-time">35 mins</p>
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Section -->
+<section class="feedback-section" id="feedback">
+  <div class="feedback-container">
+    <h2 class="feedback-heading">Give Us Your Feedback</h2>
+    <p class="feedback-subtext">
+      We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!
+    </p>
+
+    <form class="feedback-form" onsubmit="return validateEmail()">
+      <label for="email">Email<span style="color: red">*</span></label>
+      <input type="email" id="email" name="email" required placeholder="example@example.com" />
+
+      <div class="name-fields">
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+      </div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your message..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Exclusive Membership Section -->
+<section class="membership-section" id="membership">
+  <h2 class="membership-title"><span>Exclusive Membership</span></h2>
+  <p class="membership-subtitle">Unlock Premium Recipes</p>
+
+  <div class="membership-content">
+    <!-- Free Member Card -->
+    <div class="membership-card equal-height">
+      <img src="Images/Free1.png" alt="Free Recipe" class="membership-img" />
+      <h3 class="member-type">Free Member</h3>
+      <p class="member-benefit">✓ Only view the recipes</p>
+    </div>
+
+    <!-- Upgrade Button -->
+    <div class="upgrade-center">
+      <a href="pricing.html" class="upgrade-btn">Upgrade Now</a>
+    </div>
+
+    <!-- Premium Member Card -->
+    <div class="membership-card equal-height">
+      <img src="Images/Premium1.png" alt="Premium Recipe" class="membership-img" />
+      <h3 class="member-type">Premium Member</h3>
+      <ul class="member-benefit-list">
+        <li>✓ View the recipes</li>
+        <li>✓ Download the recipes</li>
+        <li>✓ Access to premium recipes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="footer-logo">
+    <img src="Images/Logo2.png" alt="Big Logo" />
+    <p>&copy; 2025 Flavory. <br> All rights reserved.</p> <!-- Copyright Text -->
+
+  </div>
+  <div class="footer-links">
+      <!-- Section 1: Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="Recipe Page.html">Recipes</a></li>
+          <li><a href="Aboutus.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+  
+      <!-- Section 3: Connect -->
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+
+</body>
+<script>
+  // Sticky navbar with blur on scroll
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  function validateEmail() {
+    const emailField = document.getElementById("email").value;
+    if (!emailField.includes("@")) {
+      alert("Please enter a valid email address containing '@'.");
+      return false;
+    }
+    return true;
+  }
+</script>
+</html>
