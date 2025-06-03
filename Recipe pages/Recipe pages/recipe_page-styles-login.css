@@ -1,0 +1,416 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff9f5;
+  color: #5b3c2a;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #FFF8E1;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    flex: 1;
+  }
+  .logo-img {
+    width: 50px;
+    height: auto;
+  }
+
+  .navbar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #fcf3cf;
+  }
+
+  
+  .profile-btn {
+    padding: 10px 20px;
+    background-color: #783408;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-btn i {
+    font-size: 18px;
+  }
+  
+  .profile-btn:hover {
+    background-color: #5e2806;
+  }
+ 
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #5b3c2a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7a3e1d;
+}
+
+.recipe-intro {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.recipe-img {
+  max-width: 60%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  }
+
+.recipe-section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #934b1d;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.print-button {
+  display: none;
+  margin-top: 1.5rem;
+  background-color: #a97c50;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%; /* make it full-width or use fixed width like 300px if needed */
+  max-width: 350px;
+  text-align: center;
+}
+
+.print-button i {
+  font-size: 1.2rem;
+}
+
+.premium .print-button {
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .recipe-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Footer */
+.footer {
+    background-color: #FFF8E1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between; /* Space sections evenly */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 100px; /* Add space between sections */
+
+
+  }
+
+  .footer-logo {
+    text-align: center; /* Center the content */
+  }
+
+  .footer-logo img {
+    width: 150px; /* Increase size of the logo image */
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 10px; /* Add space between the image and copyright text */
+  }
+
+  .footer-logo p {
+    font-size: 14px; /* Adjust font size for the copyright text */
+    color: #783408;
+    margin-top: 0;
+    margin-left: 100px;
+  }
+
+  /* Footer Links Container */
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow footer-links to grow and fill the available space */
+    flex-wrap: nowrap; /* Prevent wrapping */
+
+  }
+
+  /* Footer Section */
+  .footer-section {
+    width: 30%; /* Adjust width to fit three sections in one line */
+    text-align: left;
+  }
+
+  .footer-section h3 {
+    font-weight: bold; /* Make section title bold */
+    margin-bottom: 30px;
+    color: #783408;
+  }
+
+  .footer-section ul {
+    list-style: none; /* Remove bullets from list */
+    padding-left: 0;
+  }
+
+  .footer-section ul li {
+
+    margin-bottom: 20px; /* Adjust this to control the space between the list items */
+
+  }
+
+  .footer-section ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #783408; /* Set color for links */
+
+  }
+
+  .footer-section ul li a:hover {
+    color: #783408; /* Change link color on hover */
+  }
+
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack the footer sections vertically on small screens */
+      align-items: center; /* Center the content */
+    }
+
+    .footer-links {
+      flex-direction: column; /* Stack the sections vertically */
+      align-items: center; /* Center align the links */
+    }
+
+    .footer-section {
+      width: 100%; /* Make each section take full width on small screens */
+      margin-bottom: 20px; /* Add space between sections */
+    }
+  }
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .signup-container {
+      justify-content: center;
+      padding-right: 0;
+      width: 100%;
+    }
+
+    .member {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+    }
+
+    .member-photo {
+      margin: 0 0 10px 0;
+    }
+
+    .member-info {
+      text-align: center;
+    }
+
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+ }
+
+ /* Recipe Overview Layout (Text + Image Side by Side) */
+.recipe-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.recipe-overview .description {
+  flex: 1 1 50%;
+}
+
+.recipe-overview .image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Time Section Styling */
+.time-section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  background-color: #fff3e0;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.clock-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.time-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff1e6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  text-align: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.time-box div {
+  text-align: center;
+  color: #7a3e1d;
+  font-weight: bold;
+}
+
+.time-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.time-block i {
+  font-size: 24px;
+  color: #5b3c2a;
+  margin-bottom: 10px;
+}
+
+.time-label {
+  font-weight: 600;
+  color: #934b1d;
+  margin-bottom: 5px;
+}
+
+.time-value {
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .recipe-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-overview .description,
+  .recipe-overview .image {
+    width: 100%;
+  }
+
+  .time-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .clock-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+  

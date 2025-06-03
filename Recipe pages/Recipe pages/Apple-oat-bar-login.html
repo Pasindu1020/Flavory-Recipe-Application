@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Oat Bars | Flavory</title>
+  <link rel="stylesheet" href="recipe_page-styles-login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="premium">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="Logo.png" alt="Logo" class="logo-img" />
+    </div>
+
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Recipe</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="profile">
+      <button class="profile-btn">
+        <i class="fa fa-user"></i> Profile
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="recipe-title">Apple Oat Bars</h1>
+
+    <!-- Recipe Overview -->
+    <div class="recipe-overview">
+      <div class="description">
+        <p class="recipe-intro">
+          Embrace the comforting taste of home with these wholesome Apple Oat Bars. Packed with tender apples, warm
+          cinnamon, and hearty oats, these bars strike the perfect balance between sweet and satisfying. Whether you
+          enjoy them as a quick breakfast, a midday snack, or a healthy dessert, each bite delivers a chewy,
+          golden-baked treat full of cozy fall flavors. Easy to make and naturally delicious, they’re the kind of
+          feel-good snack you’ll want to keep on hand all week long.
+        </p>
+
+        <!-- Print Button (Visible only to Premium users) -->
+        <button class="print-button" >
+          Print Recipe <i class="fa-solid fa-print"></i>
+        </button>
+
+      </div>
+
+      <div class="image">
+        <img src="apple oat bar.jfif" alt="Apple Oat Bars" class="recipe-img">
+      </div>
+    </div>
+
+    <!-- Time Section -->
+    <div class="time-section">
+      <img src="clock-icon.png" alt="Clock Icon" class="clock-icon">
+      <div class="time-box">
+        <div>
+          <p>Prep Time</p>
+          <p>10 mins</p>
+        </div>
+        <div>
+          <p>Cook Time</p>
+          <p>30 mins</p>
+        </div>
+        <div>
+          <p><strong>Total Time</strong></p>
+          <p><strong>40 mins</strong></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Ingredients -->
+    <div class="recipe-section">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2 cups Oats</li>
+        <li>1 tsp Baking powder</li>
+        <li>1 tsp Ground cinnamon</li>
+        <li>1 tbsp Ground flaxseed + 2.5 tbsp Water (for flax egg)</li>
+        <li>½ cup Peanut butter or Almond butter</li>
+        <li>⅓ cup Maple syrup or Honey</li>
+        <li>½ cup Almond milk (or any milk of choice)</li>
+        <li>½ cup Unsweetened applesauce</li>
+        <li>1 tsp Vanilla extract</li>
+        <li>1–2 Honeycrisp or Gala apples, chopped</li>
+      </ul>
+    </div>
+
+    <!-- Directions -->
+    <div class="recipe-section">
+      <h2>Directions</h2>
+      <ol>
+        <li>Make the flax egg: In a bowl, mix the ground flaxseed with water and let it sit for 5 minutes to thicken.
+        </li>
+        <li>Mix wet ingredients: Add peanut butter, honey or maple syrup, applesauce, and vanilla extract to the bowl.
+          Whisk until smooth.</li>
+        <li>Add milk: Pour in the milk and whisk until well incorporated.</li>
+        <li>Add dry ingredients: Stir in the oats, cinnamon, and baking powder using a spatula until combined.</li>
+        <li>Fold in apples: Gently fold in the chopped apples until evenly distributed.</li>
+        <li>Bake: Pour the mixture into a prepared baking pan and bake at 350°F (175°C) for 30–35 minutes, or until set
+          and golden brown.</li>
+        <li>Cool and serve: Let the bars cool completely before slicing and serving.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo1.JPG" alt="Big Logo" />
+      <p>&copy; 2025 Flavory. All rights reserved.</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Salads</a></li>
+          <li><a href="#">Entrees</a></li>
+          <li><a href="#">Desserts</a></li>
+          <li><a href="#">Beverages</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script to hide print button for normal users 
+  <script>
+    const isPremium = document.body.classList.contains("premium");
+    if (!isPremium) {
+      document.querySelector(".print-button").style.display = "none";
+    } else {
+      document.querySelector(".print-button").addEventListener("click", () => window.print());
+    }
+  </script>-->
+
+  <script>
+    // Fetch user session data
+    fetch('getUser.php')
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "logged_in") {
+          document.getElementById('user-area').innerHTML = `<span>👤 ${data.uname}</span>`;
+
+          // Show print button only for premium users
+          if (data.membership.toLowerCase() === "premium") {
+            document.getElementById('printBtn').style.display = "inline-block";
+          }
+        }
+      });
+  </script>
+
+</body>
+
+</html>
