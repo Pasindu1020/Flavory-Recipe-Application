@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
-    header("Location: Signup.html");
+    header("Location: Login.html");
     exit;
 }
 ?>
@@ -79,8 +79,8 @@ if (!isset($_SESSION['email'])) {
       <h3>Teriyaki Chicken Rice</h3>
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
-    <div class="recipe-card" id="premium-recipe">
-      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" />
+    <div class="recipe-card" id="premium-recipe"><a href="Recipe pages/teriyaki-chicken-rice.html">
+      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" /></a>
       <h3>Coconut Curry Chicken</h3>
       <p><i class="fas fa-clock"></i> 45 mins</p>
     </div>
