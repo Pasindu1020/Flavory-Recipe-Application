@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
-    header("Location: Signup.html");
+    header("Location: Login.html");
     exit;
 }
 ?>
@@ -54,7 +54,7 @@ if (!isset($_SESSION['email'])) {
       <h3>Breakfast Buns</h3>
       <p><i class="fas fa-clock"></i> 35 mins</p>
     </div>
-    <div class="recipe-card"><a href="Recipe pages/chicken-fried-rice.html">
+    <div class="recipe-card "><a href="Recipe pages/chicken-fried-rice.html">
       <img src="Recipe pages/chicken-fried-rice.jpg" alt="Chicken Fried Rice" /></a>
       <h3>Chicken Fried Rice</h3>
       <p><i class="fas fa-clock"></i> 30 mins</p>
@@ -74,13 +74,13 @@ if (!isset($_SESSION['email'])) {
       <h3>Lemon Mashroom Pasta</h3>
       <p><i class="fas fa-clock"></i> 25 mins </p>
     </div>
-    <div class="recipe-card"><a href="Recipe pages/teriyaki-chicken-rice.html">
+    <div class="recipe-card premium-only"><a href="Recipe pages/teriyaki-chicken-rice.html">
       <img src="Recipe pages/teriyaki-chicken-rice.jpeg" alt="Teriyaki Chicken Rice" /></a>
       <h3>Teriyaki Chicken Rice</h3>
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
-    <div class="recipe-card" id="premium-recipe">
-      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" />
+    <div class="recipe-card premium-only" id="premium-recipe"><a href="Recipe pages/teriyaki-chicken-rice.html">
+      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" /></a>
       <h3>Coconut Curry Chicken</h3>
       <p><i class="fas fa-clock"></i> 45 mins</p>
     </div>
