@@ -31,29 +31,32 @@
       <img src="card_img.png" alt="MasterCard">
     </div>
 
-    <form class="payment-form">
-      <label>Name on the Card:</label>
-      <input type="text" required>
+    <!-- ✅ Updated Form: uses POST and sends to process_payment.php -->
+    <form class="payment-form" action="process_payment.php" method="POST">
+  <!-- your input fields with proper name attributes -->
+  <label>Name on the Card:</label>
+  <input type="text" name="card_name" required>
 
-      <label>Card Number:</label>
-      <input type="text" required>
+  <label>Card Number:</label>
+  <input type="text" name="card_number" required>
 
-      <div class="exp-row">
-        <div class="exp-input">
-          <label>Exp Year:</label>
-          <input type="text" required>
-        </div>
-        <div class="exp-input">
-          <label>Exp Month:</label>
-          <input type="text" required>
-        </div>
-      </div>
+  <div class="exp-row">
+    <div class="exp-input">
+      <label>Exp Year:</label>
+      <input type="text" name="exp_year" required>
+    </div>
+    <div class="exp-input">
+      <label>Exp Month:</label>
+      <input type="text" name="exp_month" required>
+    </div>
+  </div>
 
-      <label>CVV:</label>
-      <input type="text" required>
+  <label>CVV:</label>
+  <input type="text" name="cvv" required>
 
-      <button type="submit" class="confirm-btn">Confirm Payment</button>
-    </form>
+  <button type="submit" class="confirm-btn">Confirm Payment</button>
+</form>
+
   </main>
 
   <footer>
