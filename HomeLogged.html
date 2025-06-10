@@ -82,7 +82,7 @@
 <section class="premium-recipes" id="recipes">
   <h2 class="section-heading">Premium Recipes</h2>
   <div class="recipe-grid">
-    <div class="recipe-card">
+    <div class="recipe-card premium-recipe" data-recipe-url="RecipeLogged.php">
       <img src="Images/Elevated.png" alt="Elevated" class="recipe-img" />
       <p class="recipe-label">Elevated</p>
     </div>
@@ -99,7 +99,18 @@
       <p class="recipe-label">Hearty</p>
     </div>
   </div>
+
+  <!-- Modal -->
+<div id="premiumModal">
+  <div id="premiumModalContent">
+    <p>Please upgrade your membership to <strong>Premium</strong> to access this recipe.</p>
+    <button onclick="document.getElementById('premiumModal').style.display='none'">Close</button>
+  </div>
+</div>
 </section>
+
+
+<script src="premium-check.js"></script>
 
 <!-- Most Recent Recipes Section -->
 <section class="recent-recipes" id="recent">
