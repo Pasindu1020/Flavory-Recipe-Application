@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['logemail'])) {
     header("Location: Login.html");
     exit;
 }
@@ -54,7 +54,7 @@ if (!isset($_SESSION['email'])) {
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
     <div class="recipe-card "><a href="Recipe pages/Bibimbap-login.html">
-      <img src="Images/Bibimbap.jpg" alt="Bibimbap" /></a>
+      <img src="Images/Bibimbap.jfif" alt="Bibimbap" /></a>
       <h3>Bibimbap</h3>
       <p><i class="fas fa-clock"></i> 30 mins</p>
     </div>
@@ -68,7 +68,7 @@ if (!isset($_SESSION['email'])) {
 
   <main class="recipe-grid">
     <!-- Recipe Cards -->
-    <div class="recipe-card"><a href="Recipe page/Creamy-Vegetable-Soup-login.html">
+    <div class="recipe-card"><a href="Recipe pages/Creamy-Vegetable-Soup-login.html"style="text-decoration:none;">
       <img src="Images/Creamy-Vegetable-Soup.jfif" alt="Creamy-Vegetable-" /></a>
       <h3>Creamy Vegetable Soup</h3>
       <p><i class="fas fa-clock"></i> 45 mins </p>
@@ -79,7 +79,7 @@ if (!isset($_SESSION['email'])) {
 
 
   <div class="pagination">
-    <span>1</span>
+    <a href ="RecipeLogged.php" style="text-decoration:none;" ><span>1</span></a>
     <span>2</span>
     <span>&gt;</span>
   </div>

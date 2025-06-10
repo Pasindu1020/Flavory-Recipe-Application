@@ -90,7 +90,7 @@ if (!isset($_SESSION['logemail'])) {
 
   <div class="pagination">
     <span>1</span>
-    <span><a src ="RecipeLogged2.php" style="text-decoration:none;" >2</a></span>
+   <a href ="RecipeLogged2.php" style="text-decoration:none;" > <span>2</span></a>
     <span>&gt;</span>
   </div>
 
