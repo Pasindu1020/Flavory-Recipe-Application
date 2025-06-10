@@ -48,18 +48,18 @@ if (!isset($_SESSION['logemail'])) {
 
   <main class="recipe-grid">
     <!-- Recipe Cards -->
-    <div class="recipe-card"><a href="Recipe pages/Apple-oat-bar-login.html">
-      <img src="Images/apple oat bar.jfif" alt="Apple-oat-bar-login" /></a>
+    <div class="recipe-card premium-recipe" data-recipe-url="Recipe pages/Apple-oat-bar-login.html">
+      <img src="Images/apple oat bar.jfif" alt="Apple-oat-bar-login" />
       <h3>Apple oat bar</h3>
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
-    <div class="recipe-card "><a href="Recipe pages/Bibimbap-login.html">
-      <img src="Images/Bibimbap.jfif" alt="Bibimbap" /></a>
+    <div class="recipe-card premium-recipe" data-recipe-url="Recipe pages/Bibimbap-login.html">
+      <img src="Images/Bibimbap.jfif" alt="Bibimbap" />
       <h3>Bibimbap</h3>
       <p><i class="fas fa-clock"></i> 30 mins</p>
     </div>
-    <div class="recipe-card"><a href="Recipe pages/Bread-Pizza-login.html">
-      <img src="Images/Bread Pizza.jfif" alt="Bread Pizza" /></a>
+    <div class="recipe-card premium-recipe" data-recipe-url="Recipe pages/Bread-Pizza-login.html">
+      <img src="Images/Bread Pizza.jfif" alt="Bread Pizza" />
       <h3>Bread Pizza</h3>
       <p><i class="fas fa-clock"></i> 25 mins</p>
     </div>
@@ -68,8 +68,8 @@ if (!isset($_SESSION['logemail'])) {
 
   <main class="recipe-grid">
     <!-- Recipe Cards -->
-    <div class="recipe-card"><a href="Recipe pages/Creamy-Vegetable-Soup-login.html"style="text-decoration:none;">
-      <img src="Images/Creamy-Vegetable-Soup.jfif" alt="Creamy-Vegetable-" /></a>
+    <div class="recipe-card premium-recipe" data-recipe-url="Recipe pages/Creamy-Vegetable-Soup-login.html">
+      <img src="Images/Creamy-Vegetable-Soup.jfif" alt="Creamy-Vegetable-" />
       <h3>Creamy Vegetable Soup</h3>
       <p><i class="fas fa-clock"></i> 45 mins </p>
     </div>
@@ -93,10 +93,10 @@ if (!isset($_SESSION['logemail'])) {
       <div class="footer-column">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="Home.html">Home</a></li>
+          <li><a href="HomeLogged.html">Home</a></li>
           <li><a href="#">Recipes</a></li>
-          <li><a href="Aboutus.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="AboutusLogged.html">About</a></li>
+          <li><a href="ContactLogged.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-column">

@@ -10,18 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetURL = card.getAttribute("data-recipe-url");
             window.location.href = targetURL;
           } else {
-            showPremiumPopup();
+            console.error("Access Denied");
+            alert("Please upgrade to Premium User to get Access");
           }
         })
         .catch(err => {
-          console.error("Error:", err);
+          console.error("Error:",err);
           alert("Something went wrong. Please try again.");
         });
     });
   });
 });
-
-function showPremiumPopup() {
-  const modal = document.getElementById("premiumModal");
-  modal.style.display = "block";
-}

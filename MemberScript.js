@@ -1,18 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetch('get_user_data.php')
-      .then(response => response.json())
-      .then(data => {
-        if (data.error) {
-          document.getElementById("user-info").innerText = "Session expired. Please log in.";
-        } else {
-          document.getElementById("user-info").innerText = `Welcome ${data.email} (${data.membership})`;
-  
-          if (data.membership === "Premium") {
-            document.getElementById("premium-recipe").style.display = "block";
+document.addEventListener("DOMContentLoaded", () => {
+  const premiumCards = document.querySelectorAll(".premium-recipe");
+
+  premiumCards.forEach(card => {
+    card.addEventListener("click", () => {
+      fetch('get_user_data.php')
+        .then(response => response.json())
+        .then(data => {
+          if (data.membership === 'Premium') {
+            const targetURL = card.getAttribute("data-recipe-url");
+            window.location.href = targetURL;
           } else {
-            document.getElementById("premium-recipe").style.display = "none";
+            console.error("Access Denied");
+            alert("Please upgrade to Premium User to get Access");
           }
-        }
-      });
+        })
+        .catch(err => {
+          console.error("Error:",err);
+          alert("Something went wrong. Please try again.");
+        });
+    });
   });
-  
+});

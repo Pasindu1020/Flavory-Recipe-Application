@@ -76,10 +76,6 @@ body {
   .recipe-card {
     text-align: center;
   }
-
-  .premium-only {
-    display: none;
-  }
   
   .recipe-card img {
     width: 170px;

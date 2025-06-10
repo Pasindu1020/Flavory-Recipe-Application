@@ -8,12 +8,9 @@ if (isset($_SESSION['logemail']) && isset($_SESSION['membership'])) {
         'email' => $_SESSION['logemail'],
         'membership' => $_SESSION['membership']
     ]);
-}  else {
-    $response = [
-        'email' => null,
-        'membership' => 'Free'
-    ];
+} else {
+    echo json_encode([
+        'error' => 'User not logged in'
+    ]);
 }
-
-echo json_encode($response);
 ?>

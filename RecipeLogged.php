@@ -80,8 +80,8 @@ if (!isset($_SESSION['logemail'])) {
       <h3>Teriyaki Chicken Rice</h3>
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
-    <div class="recipe-card premium-only"> <a href="Recipe pages/Sweet-Potato-Mini-Pancakes-login.html">
-      <img src="Images/mini-pancake.jfif" alt="Sweet Potato Mini Pancakes" /></a>
+    <div class="recipe-card premium-recipe" data-recipe-url="Recipe pages/Sweet-Potato-Mini-Pancakes-login.html">
+      <img src="Images/mini-pancake.jfif" alt="Sweet Potato Mini Pancakes" />
       <h3>Sweet Potato Mini Pancakes</h3>
       <p><i class="fas fa-clock"></i> 15 mins</p>
     </div>
