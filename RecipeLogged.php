@@ -26,10 +26,10 @@ if (!isset($_SESSION['logemail'])) {
       </div>
       <nav>
         <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="Aboutus.html">About</a></li>
+          <li><a href="HomeLogged.html">Home</a></li>
+          <li><a href="AboutusLogged.html">About</a></li>
           <li><a href="#">Recipe</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="ContactLoggged.html">Contact</a></li>
         </ul>
       </nav>
       <div class="signup-btn">
