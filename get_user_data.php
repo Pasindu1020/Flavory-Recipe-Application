@@ -3,9 +3,9 @@ session_start();
 
 header('Content-Type: application/json');
 
-if (isset($_SESSION['email']) && isset($_SESSION['membership'])) {
+if (isset($_SESSION['logemail']) && isset($_SESSION['membership'])) {
     echo json_encode([
-        'email' => $_SESSION['email'],
+        'email' => $_SESSION['logemail'],
         'membership' => $_SESSION['membership']
     ]);
 } else {
