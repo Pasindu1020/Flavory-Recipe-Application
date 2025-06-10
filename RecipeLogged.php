@@ -50,37 +50,38 @@ if (!isset($_SESSION['email'])) {
   <main class="recipe-grid">
     <!-- Recipe Cards -->
     <div class="recipe-card"><a href="Recipe pages/breakfast-buns.html">
-      <img src="Recipe pages/breakfast-buns.jpg" alt="Breakfast Buns" /></a>
+      <img src="Images/breakfast-buns.jpg" alt="Breakfast Buns" /></a>
       <h3>Breakfast Buns</h3>
       <p><i class="fas fa-clock"></i> 35 mins</p>
     </div>
-    <div class="recipe-card "><a href="Recipe pages/chicken-fried-rice.html">
-      <img src="Recipe pages/chicken-fried-rice.jpg" alt="Chicken Fried Rice" /></a>
+    <div class="recipe-card"><a href="Recipe pages/chicken-fried-rice.html">
+      <img src="Images/chicken-fried-rice.jpg" alt="Chicken Fried Rice" /></a>
       <h3>Chicken Fried Rice</h3>
       <p><i class="fas fa-clock"></i> 30 mins</p>
     </div>
     <div class="recipe-card"><a href="Recipe pages/coconut-curry-noodles.html">
-      <img src="Recipe pages/coconut-curry-noodles.jpeg" alt="Coconut Curry Noodles" /></a>
+      <img src="Images/coconut-curry-noodles.jpeg" alt="Coconut Curry Noodles" /></a>
       <h3>Coconut Curry Noodles</h3>
       <p><i class="fas fa-clock"></i> 25 mins</p>
     </div>
+
     <!-- Add the rest of the cards similarly -->
   </main>
 
-  <main class="recipe-grid">
+   <main class="recipe-grid">
     <!-- Recipe Cards -->
     <div class="recipe-card"><a href="Recipe pages/lemon-mashroom-pasta.html">
-      <img src="Recipe pages/lemon-mashroom-pasta.jpeg" alt="Lemon Mashroom Pasta" /></a>
+      <img src="Images/lemon-mashroom-pasta.jpeg" alt="Lemon Mashroom Pasta" /></a>
       <h3>Lemon Mashroom Pasta</h3>
       <p><i class="fas fa-clock"></i> 25 mins </p>
     </div>
-    <div class="recipe-card premium-only"><a href="Recipe pages/teriyaki-chicken-rice.html">
-      <img src="Recipe pages/teriyaki-chicken-rice.jpeg" alt="Teriyaki Chicken Rice" /></a>
+    <div class="recipe-card"><a href="Recipe pages/teriyaki-chicken-rice.html">
+      <img src="Images/teriyaki-chicken-rice.jpeg" alt="Teriyaki Chicken Rice" /></a>
       <h3>Teriyaki Chicken Rice</h3>
       <p><i class="fas fa-clock"></i> 40 mins</p>
     </div>
-    <div class="recipe-card premium-only" id="premium-recipe"><a href="Recipe pages/teriyaki-chicken-rice.html">
-      <img src="Recipe pages/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" /></a>
+    <div class="recipe-card">
+      <img src="Images/Coconut-Curry-Chx.jpg" alt="Coconut Curry Chicken" />
       <h3>Coconut Curry Chicken</h3>
       <p><i class="fas fa-clock"></i> 45 mins</p>
     </div>
@@ -89,7 +90,7 @@ if (!isset($_SESSION['email'])) {
 
   <div class="pagination">
     <span>1</span>
-    <span>2</span>
+    <span><a src ="RecipeLogged2.php" style="text-decoration:none;" >2</a></span>
     <span>&gt;</span>
   </div>
 
